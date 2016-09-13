@@ -1,6 +1,17 @@
 body {
 
   font-family: 'Roboto', sans-serif;
+  font-size: 16px;
 }
 
 #mapid { height: 900px; }
+
+h1 {
+color:#092D44;
+
+}
+
+.subheading {
+  color:#092D44;
+  font-size: .75em;
+}
