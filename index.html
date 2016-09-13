@@ -132,9 +132,9 @@
             .bindPopup(
                 "<img src='images/mckinley1.jpg' width='150px'><br/>" +
                 "<h2>William McKinley Birthplace Museum</h2>" +
-                "<p>The museum's collections feature memorabilia from the Civil and Spanish American wars, objects from McKinley’s campaigns" +
+                "<p>The museum's collections feature memorabilia from the Civil and Spanish American wars, objects from McKinley's campaigns" +
                 " and presidencies and from the building of the memorial. Other objects on display include mannequins of  President and " +
-                "Mrs. McKinley in a sleigh, a spinning wheel owned by the McKinley family, a piano owned by the President’s mother, and a law desk belonging to the late president. </p>" +
+                "Mrs. McKinley in a sleigh, a spinning wheel owned by the McKinley family, a piano owned by the President's mother, and a law desk belonging to the late president. </p>" +
                 "<a href='https://mckinleybirthplacemuseum.org/' target='_blank'>Official Webpage</a><br/>" +
                 "<a href='http://www.pbs.org/wgbh/americanexperience/features/biography/presidents-mckinley/' target='_blank'>American Experience: Presidential Biography</a> <br/>" +
                 "<a href='http://pbslearningmedia.org/resource/17c43d40-961e-4408-a8a6-62524f30673a/william-mckinley-60-second-presidents/' target='_blank'>60-Second Presidents</a> <br/>"
@@ -208,13 +208,30 @@
                 "<img src='images/harding1.jpg' width='150px'><br/>" +
                 "<h2>Warren G. Harding Tomb </h2>" +
                 "<p>The Harding Memorial is a circular monument of white marble and is suggestive of a round, Greek temple. Unlike a temple, " +
-                "though, there is neither a doorway nor a roof. Instead, it forms an open court described as a 'cloister.' Being open to " +
+                "though, there is neither a doorway nor a roof. Instead, it forms an open court described as a &quot;cloister.&quot; Being open to " +
                 "the sky provides space for a garden plot surrounding the tomb and honors President Harding's wishes to be buried in a simple grave under a tree and under the stars.</p>" +
                 "<a href='http://www.hardinghome.org/harding-memorial/' target='_blank'>Harding Memorial Webpage</a><br/>" +
                 "<a href='http://www.pbs.org/wgbh/americanexperience/features/biography/presidents-harding/' target='_blank'>American Experience: Presidential Biography</a> <br/>" +
                 "<a href='http://www.pbslearningmedia.org/resource/0b0838f3-0b23-4c8e-a2a5-3d9e69bc9924/warren-g-harding-60-second-presidents/' target='_blank'>60-Second Presidents</a> <br/>"
 
             );
+
+
+        L.marker([39.152558, -84.748004], {
+                icon: redPin
+            }).addTo(mymap)
+            .bindPopup(
+                "<img src='images/harrison1.jpg' width='150px'><br/>" +
+                "<h2>William Henry Harrison Memorial and Tomb</h2>" +
+                "<p>Inscription Text: &quot;William Henry Harrison. Secretary of the Northwest Territory. Delegate of the Northwest Territory " +
+                "to Congress. Territorial Governor of Indiana. Member of Congress from Ohio. Ohio State Senator. United States Senator " +
+                "from Ohio. Minister to Colombia. Ninth President of the United States.&quot;</p>" +
+                "<a href='https://www.ohiohistory.org/visit/museum-and-site-locator/william-henry-harrison-tomb' target='_blank'>Ohio History Connection</a><br/>" +
+                "<a href='http://pbslearningmedia.org/resource/arct14.soc.amexprewhh/the-presidents-biography-9-william-henry-harrison/' target='_blank'>American Experience: Presidential Biography</a> <br/>" +
+                "<a href='http://pbslearningmedia.org/resource/24d50e90-a9f0-47e0-b653-81e7e51c2f93/william-henry-harrison-60-second-presidents/' target='_blank'>60-Second Presidents</a> <br/>"
+
+            );
+
 
         L.marker([41.340794, -83.130361], {
                 icon: redPin
@@ -223,7 +240,7 @@
                 "<img src='images/harding1.jpg' width='150px'><br/>" +
                 "<h2>Rutherford B. Hayes Tomb</h2>" +
                 "<p>Hayes is buried at Spiegel Grove, the name given to the estate of 19th President. It was so named for the large puddles of " +
-                "rainwater that collect beneath the towering trees following a storm. 'Spiegel' is the German word for mirror - an accurate description for these nature-made reflecting pools.</p>" +
+                "rainwater that collect beneath the towering trees following a storm. &quot;Spiegel&quot; is the German word for mirror - an accurate description for these nature-made reflecting pools.</p>" +
                 "<a href='http://www.rbhayes.org/' target='_blank'>Official Webpage</a><br/>" +
                 "<a href='http://www.pbs.org/wgbh/americanexperience/features/biography/presidents-hayes/' target='_blank'>American Experience: Presidential Biography</a> <br/>" +
                 "<a href='http://pbslearningmedia.org/resource/2f968956-a131-4c98-8577-75249914b4b1/rutherford-b-hayes-60-second-presidents/' target='_blank'>60-Second Presidents</a> <br/>"
@@ -245,35 +262,180 @@
 
             );
 
-            L.marker([41.428603, -81.394441], {
-                    icon: whitePin
-                }).addTo(mymap)
-                .bindPopup(
-                    "<img src='images/garfield1.jpg' width='150px'><br/><h1>James Garfield</h1><h3>20<sup>th</sup> President</h3>" +
-                    "<h2>James A. Garfield Birthplace</h2>" +
-                    "<p>Marker text: 'James Abram Garfield, 20th President of the United States, was born here in 1831. His father died when he was two, but the " +
-                    "family remained on the farm where James helped when he was not attending school. He continued to live here through his years as a driver and " +
-                    "bowsman on the canal and as a student at Geauga Seminary and Hiram Eclectic Institute (later Hiram College). He left here in 1859 when he was elected to the Ohio Senate.'</p>" +
-                    "<a href='http://www.remarkableohio.org/index.php?/category/263' target='_blank'>Remarkable Ohio Historic Marker</a> <br/>" +
-                    "<a href='http://www.pbs.org/wgbh/americanexperience/features/biography/presidents-garfield/' target='_blank'>American Experience: Presidential Biography</a> <br/>" +
-                    "<a href='http://www.pbs.org/wgbh/americanexperience/films/garfield/player/' target='_blank'>American Experience: Murder of a President</a> <br/>" +
-                    "<a href='http://pbslearningmedia.org/resource/b98d7dbb-a7bf-468c-aefa-9c0314d908b5/james-a-garfield-60-second-presidents/' target='_blank'>60-Second Presidents</a> <br/>"
-                );
+        L.marker([41.428603, -81.394441], {
+                icon: whitePin
+            }).addTo(mymap)
+            .bindPopup(
+                "<img src='images/garfield1.jpg' width='150px'><br/><h1>James Garfield</h1><h3>20<sup>th</sup> President</h3>" +
+                "<h2>James A. Garfield Birthplace</h2>" +
+                "<p>Marker text: &quot;James Abram Garfield, 20th President of the United States, was born here in 1831. His father died when he was two, but the " +
+                "family remained on the farm where James helped when he was not attending school. He continued to live here through his years as a driver and " +
+                "bowsman on the canal and as a student at Geauga Seminary and Hiram Eclectic Institute (later Hiram College). He left here in 1859 when he was elected to the Ohio Senate.&quot;</p>" +
+                "<a href='http://www.remarkableohio.org/index.php?/category/263' target='_blank'>Remarkable Ohio Historic Marker</a> <br/>" +
+                "<a href='http://www.pbs.org/wgbh/americanexperience/features/biography/presidents-garfield/' target='_blank'>American Experience: Presidential Biography</a> <br/>" +
+                "<a href='http://www.pbs.org/wgbh/americanexperience/films/garfield/player/' target='_blank'>American Experience: Murder of a President</a> <br/>" +
+                "<a href='http://pbslearningmedia.org/resource/b98d7dbb-a7bf-468c-aefa-9c0314d908b5/james-a-garfield-60-second-presidents/' target='_blank'>60-Second Presidents</a> <br/>"
+            );
 
-                L.marker([40.635621, -82.969232], {
-                        icon: whitePin
-                    }).addTo(mymap)
-                    .bindPopup(
-                        "<img src='images/harding1.jpg' width='150px'><br/>" +
-                        "<h2>Boyhood Home of Warren G. Harding</h2>" +
-                        "<p>Marker Text: 'Boyhood home (1872-1881) of Warren G. Harding, 29th president of the United States. In a Caledonia " +
-                        "printing shop owned by his father, Dr. George Tryon Harding, Warren learned the fundamentals of the printing trade which inspired his interest in a journalism career.'</p>" +
-                        "<a href='http://www.remarkableohio.org/index.php?/category/1030' target='_blank'>Remarkable Ohio Historic Marker</a><br/>" +
-                        "<a href='http://www.pbs.org/wgbh/americanexperience/features/biography/presidents-harding/' target='_blank'>American Experience: Presidential Biography</a> <br/>" +
-                        "<a href='http://www.pbslearningmedia.org/resource/0b0838f3-0b23-4c8e-a2a5-3d9e69bc9924/warren-g-harding-60-second-presidents/' target='_blank'>60-Second Presidents</a> <br/>"
+        L.marker([40.635621, -82.969232], {
+                icon: whitePin
+            }).addTo(mymap)
+            .bindPopup(
+                "<img src='images/harding1.jpg' width='150px'><br/>" +
+                "<h2>Boyhood Home of Warren G. Harding</h2>" +
+                "<p>Marker Text: &quot;Boyhood home (1872-1881) of Warren G. Harding, 29th president of the United States. In a Caledonia " +
+                "printing shop owned by his father, Dr. George Tryon Harding, Warren learned the fundamentals of the printing trade which inspired his interest in a journalism career.&quot;</p>" +
+                "<a href='http://www.remarkableohio.org/index.php?/category/1030' target='_blank'>Remarkable Ohio Historic Marker</a><br/>" +
+                "<a href='http://www.pbs.org/wgbh/americanexperience/features/biography/presidents-harding/' target='_blank'>American Experience: Presidential Biography</a> <br/>" +
+                "<a href='http://www.pbslearningmedia.org/resource/0b0838f3-0b23-4c8e-a2a5-3d9e69bc9924/warren-g-harding-60-second-presidents/' target='_blank'>60-Second Presidents</a> <br/>"
 
-                    );
+            );
 
+        L.marker([39.150436, -84.745772], {
+                icon: whitePin
+            }).addTo(mymap)
+            .bindPopup(
+                "<img src='images/harrison1.jpg' width='150px'><br/>" +
+                "<h2>Historic Marker for home of William Henry Harrison</h2>" +
+                "<p>Marker Text: &quot;William Henry Harrison (1773-1841), ninth president of the United States, left his home state of Virginia in 1791" +
+                "and was commissioned in the 1st Regiment of Infantry. After his resignation from the army, he became Secretary of the Northwest Territory. " +
+                "In 1801, Harrison became governor of the recently created Indiana Territory. During the War of 1812, he was given command of the Army of the " +
+                "Northwest, defeating combined British and Native American forces at the Battle of the Thames. Harrison lived here following the War of 1812. " +
+                "He turned to politics while living in North Bend and represented Ohio in the United States Congress for two terms. In the presidential election " +
+                "of 1840, the Whigs capitalized on Harrison's fame as a military hero and nominated him to run against incumbent Democrat Martin Van Buren. " +
+                "Shortly after his lengthy inaugural address, Harrison developed pneumonia. He died on April 4, 1841, and his body was returned to North Bend for burial.&quot;</p>" +
+                "<a href='http://www.remarkableohio.org/index.php?/category/541' target='_blank'>Remarkable Ohio Historic Marker</a><br/>" +
+                "<a href='http://pbslearningmedia.org/resource/arct14.soc.amexprewhh/the-presidents-biography-9-william-henry-harrison/' target='_blank'>American Experience: Presidential Biography</a> <br/>" +
+                "<a href='http://pbslearningmedia.org/resource/24d50e90-a9f0-47e0-b653-81e7e51c2f93/william-henry-harrison-60-second-presidents/' target='_blank'>60-Second Presidents</a> <br/>"
+
+            );
+
+        L.marker([39.758948, -84.191607], {
+                icon: whitePin
+            }).addTo(mymap)
+            .bindPopup(
+                "<img src='images/lincoln1.jpg' width='150px'><br/>" +
+                "<h2>Abraham Lincoln Historic Site</h2>" +
+                "<p>Lincoln delivered five speeches during a two-day Ohio trip: two speeches in Columbus, a stop in Dayton, and a brief stop in Hamilton " +
+                "as he traveled from Dayton to Cincinnati for the final event. During his presentations, Lincoln made clear his belief that the will of the " +
+                "people should determine all matters, and communicated his opposition to the institution of slavery. While in Dayton, Lincoln was hosted by " +
+                "attorney Robert Schenck and banker Valentine Winters. Both were influential figures in the newly formed Republican Party. During remarks " +
+                "preceding those of Lincoln, Schenck spoke to the assembled crowd regarding the growing animosity within the country. And, in this speech, " +
+                "Schenck recommended that the Republican Party nominate Abraham Lincoln for  the presidency. This was, perhaps, the first public " +
+                "endorsement of Lincoln for the presidency. It is fact that prominence gained by Lincoln at this time projected his image from small-time " +
+                "state politician to contender for higher national office.</p>" +
+                "<a href='http://www.lincolnsocietyofdayton.org/' target='_blank'>Lincoln Society of Dayton</a><br/>" +
+                "<a href='http://www.pbs.org/wgbh/americanexperience/features/biography/presidents-lincoln/' target='_blank'>American Experience: Presidential Biography</a> <br/>" +
+                "<a href='http://pbslearningmedia.org/resource/55d29de8-06bd-4d07-8231-3a40df6f087c/abraham-lincoln-60-second-presidents/' target='_blank'>60-Second Presidents</a> <br/>"
+
+            );
+
+        L.marker([40.369791, -80.633964], {
+                icon: whitePin
+            }).addTo(mymap)
+            .bindPopup(
+                "<img src='images/lincoln1.jpg' width='150px'><br/>" +
+                "<h2>Abraham Lincoln Visits Steubenville</h2>" +
+                "<p>Marker Text: &quot;Abraham Lincoln and his family stopped in Steubenville on February 14, 1861 on their way to Lincoln's presidential " +
+                "inauguration in Washington, D.C. Traveling by train, once in Steubenville he departed the depot to address a large crowd of Ohioans " +
+                "and Virginians from a platform at Market and High Streets. When Judge W.R. Lloyd introduced him as the only person who could preserve " +
+                "the Union during this time of national crisis, President elect Lincoln electrified the attentive audience by eloquently speaking on the " +
+                "commitment to the Constitution by people from both sides of the Ohio River, on the differing opinions of what the Constitution means, and " +
+                "on the virtues of majority rule. Fifty-seven days later, the Civil War began. No one at the time knew that Steubenville native Edwin M. Stanton " +
+                "would become Lincoln's Secretary of War and that Stanton would give the immortal tribute at Lincoln's death in 1865 saying, &quot;Now he belongs to the ages!&quot;&quot;</p>" +
+                "<a href='http://www.remarkableohio.org/index.php?/category/798' target='_blank'>Remarkable Ohio Historic Marker</a><br/>" +
+                "<a href='http://www.pbs.org/wgbh/americanexperience/features/biography/presidents-lincoln/' target='_blank'>American Experience: Presidential Biography</a> <br/>" +
+                "<a href='http://pbslearningmedia.org/resource/55d29de8-06bd-4d07-8231-3a40df6f087c/abraham-lincoln-60-second-presidents/' target='_blank'>60-Second Presidents</a> <br/>"
+
+            );
+
+        L.marker([39.642166, -84.101226], {
+                icon: whitePin
+            }).addTo(mymap)
+            .bindPopup(
+                "<img src='images/mckinley1.jpg' width='150px'><br/>" +
+                "<h2>President William McKinley Memorial</h2>" +
+                "<p>The west side of the Statehouse and Capitol Square is dominated by the McKinley Memorial, a monumental grouping of statues that honors the " +
+                "nation's 25th President, an Ohio native who was assassinated in 1901. On either side of the monument are flanking statues representing Peace and " +
+                "Prosperity. Each is depicted as an adult figure guiding and instructing a youth, representing the next generation. The adult female figure of " +
+                "Peace, a palm of peace grasped in her hand, draws a little girl close to herself to confide that the greatness of the nation is in her peaceful " +
+                "pursuits, while the adult male figure of Prosperity instructs a young boy in the use of the tools of industry, the basis of so much of the nation's prosperity.</p>" +
+                "<a href='http://www.capitolsquarefoundation.org/visitstatehouse/mckinley-monument.aspx' target='_blank'>Ohio Statehouse Museum</a><br/>" +
+                "<a href='http://www.pbs.org/wgbh/americanexperience/features/biography/presidents-mckinley/' target='_blank'>American Experience: Presidential Biography</a> <br/>" +
+                "<a href='http://pbslearningmedia.org/resource/17c43d40-961e-4408-a8a6-62524f30673a/william-mckinley-60-second-presidents/' target='_blank'>60-Second Presidents</a> <br/>"
+
+            );
+
+        L.marker([40.251919, -82.521027], {
+                icon: whitePin
+            }).addTo(mymap)
+            .bindPopup(
+                "<img src='images/woodhull1.jpg' width='150px'><br/>" +
+                "<h2>Birthplace of Victoria Woodhull, First Female Candidate for President of the United States</h2>" +
+                "<p>Marker Text: &quot;Born in Homer in 1838, Victoria Claflin proved to be a woman with visions that exceeded her time. " +
+                "Victoria and her sister Tennessee, in 1870, became the first women stockbrokers in the country. Her opinions expressed in the " +
+                "Woodhull &amp; Claflin's Weekly newspaper led her to become the first woman invited to address Congress. Because of her unrelenting " +
+                "advocacy of women's suffrage, Victoria Woodhull was nominated to run for president by the &quotEqual Rights&quot party in 1872. " +
+                "Her life was a continual campaign to fight for woman's suffrage, civil rights, and child labor reform laws. In 1879, Victoria married " +
+                "John Martin and lived her remaining years in British Society. She died in England in 1927.&quot;</p>" +
+                "<a href='http://www.remarkableohio.org/index.php?/category/870' target='_blank'>Remarkable Ohio Historic Marker</a><br/>"
+
+
+            );
+        L.marker([39.961439, -82.999710], {
+                icon: whitePin
+            }).addTo(mymap)
+            .bindPopup(
+                "<img src='images/statuejewels.jpg' width='150px'><br/>" +
+                "<h2>&quot;These Are My Jewels&quot; Monument</h2>" +
+                "<p>The sculptural group &quot;These Are My Jewels&quot; is an imposing addition to the Northwest " +
+                "corner of the Statehouse grounds. Tall and commanding, a series of life size portrait sculptures " +
+                "arranged around a drum shaped base gives recognition to the military and political leaders from the " +
+                "state of Ohio who contributed greatly to the Union cause during the Civil War. Included among the figures are Presidents Grant, Garfield and Hayes.</p>" +
+                "<a href='http://www.capitolsquarefoundation.org/visitstatehouse/jewels-monument.aspx' target='_blank'>Ohio Statehouse Museum</a><br/>"
+
+
+            );
+        L.marker([41.499320, -81.694361], {
+                icon: whitePin
+            }).addTo(mymap)
+            .bindPopup(
+                "<h2>A Photographic History of Presidential Visits to Greater Cleveland</h2>" +
+                "<p>Cleveland, being the largest city in a key battleground state, is a popular destination for presidential " +
+                "candidates and presidents themselves. Every Commander-in-Chief since Harry Truman has stopped in Greater " +
+                "Cleveland at some point during their candidacy or their presidency. The nation's current president, Barack Obama, " +
+                "has visited multiple time as both a candidate and as Commander-in-Chief. The reasons for their visits range " +
+                "from simple campaign stops to promoting their policies. Cleveland, of course, was home to the 2016 Republican National Convention.</p>" +
+                "<a href='http://www.cleveland.com/entertainment/index.ssf/2016/06/a_photographic_history_of_pres.html' target='_blank'>View Gallery</a><br/>"
+
+
+            );
+        L.marker([39.415352, -81.454844], {
+                icon: whitePin
+            }).addTo(mymap)
+            .bindPopup(
+                "<h2>Presidential Visits to Marietta</h2>" +
+                "<p>Recording visits from current and future Presidents since George Washington, Marietta and its " +
+                "location on the Ohio River has made it an important stopping point for key figures for more than 250 years.</p>" +
+                "<a href='http://www.hiddenmarietta.com/single-post/2016/04/19/Presidential-Visits-to-Marietta' target='_blank'>Read Article</a><br/>"
+
+
+            );
+        L.marker([39.415352, -81.454844], {
+                icon: whitePin
+            }).addTo(mymap)
+            .bindPopup(
+                "<h2>The history of U.S. Presidents Visiting Ohio University</h2>" +
+                "<p>Ohio University itself has a long history of politicians visiting its campus and speaking to students, " +
+                "faculty and community members. Most notably, many U.S. presidents have taken a trip to Athens to engage with the " +
+                "politically active campus. Each presidential visit has not been forgotten. Along the West Portico wall, which faces " +
+                "College Green, of Templeton-Blackburn Alumni Memorial Auditorium there are plaques to commemorate each special visit. " +
+                "According to a story in a Compass newsletter from 2010, the addition of the plaques on the honor wall began in 1965 " +
+                "under then-university president Vernon Alden with the goal of the wall being an inspiration for all who see it.</p>" +
+                "<a href='http://courtstreetstories.com/the-history-of-u-s-presidents-visiting-ohio-university/' target='_blank'>Read Article</a><br/>"
+
+
+            );
 
 
         var popup = L.popup();
