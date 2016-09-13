@@ -16,18 +16,24 @@
 
         var LeafIcon = L.Icon.extend({
             options: {
-              shadowUrl: 'images/shadow.png',
-                iconSize:     [50, 57], // size of the icon
-              shadowSize:   [45, 47], // size of the shadow
-              iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
-              shadowAnchor: [20, 42],  // the same for the shadow
-              popupAnchor:  [-3, 0] // point from which the popup should open relative to the iconAnchor
+                shadowUrl: 'images/shadow.png',
+                iconSize: [50, 57], // size of the icon
+                shadowSize: [45, 47], // size of the shadow
+                iconAnchor: [22, 94], // point of the icon which will correspond to marker's location
+                shadowAnchor: [20, 42], // the same for the shadow
+                popupAnchor: [-3, 0] // point from which the popup should open relative to the iconAnchor
             }
         });
 
-        var bluePin = new LeafIcon({iconUrl:'images/blue_pin.png'}),
-            redPin = new LeafIcon({iconUrl:'images/red_pin.png'}),
-            whitePin = new LeafIcon({iconUrl:'images/white_pin.png'});
+        var bluePin = new LeafIcon({
+                iconUrl: 'images/blue_pin.png'
+            }),
+            redPin = new LeafIcon({
+                iconUrl: 'images/red_pin.png'
+            }),
+            whitePin = new LeafIcon({
+                iconUrl: 'images/white_pin.png'
+            });
 
 
 
@@ -42,21 +48,33 @@
 
 
 
-        L.marker([41.663978, -81.350977], {icon: bluePin}).addTo(mymap)
+        L.marker([41.663978, -81.350977], {
+                icon: bluePin
+            }).addTo(mymap)
             .bindPopup(
-                "<img src='images/garfield1.jpg' width='150px'><br/><h2>James A. Garfield National Historic Site</h2><p>A front porch can serve many purposes. For some, a place to enjoy the breeze on a warm summer night. For others, a perch from which to keep eyes on what's happening in their neighborhood. In 1880, James Garfield used his front porch as a platform to greet thousands of well-wishers during his presidential campaign. Today, the porch serves as a gateway to the story of the Garfield family.</p><a href='https://www.nps.gov/jaga/index.htm'>Official Webpage</a>"
+                "<img src='images/garfield1.jpg' width='150px'><br/><h1>James Garfield</h1><h3>20<sup>th</sup> President</h3>" +
+                "<h2>James A. Garfield National Historic Site</h2>" +
+                "<p>A front porch can serve many purposes. For some, a place to enjoy the breeze on a warm summer night. For others, a perch from which to keep eyes on what's " +
+                "happening in their neighborhood. In 1880, James Garfield used his front porch as a platform to greet thousands of well-wishers during his presidential campaign." +
+                " Today, the porch serves as a gateway to the story of the Garfield family.</p>" +
+                "<a href='https://www.nps.gov/jaga/index.htm'>Official Webpage</a> <br/>" +
+                "<a href='http://www.pbs.org/wgbh/americanexperience/features/biography/presidents-garfield/'>American Experience: Presidential Biography</a> <br/>" +
+                "<a href='http://www.pbs.org/wgbh/americanexperience/films/garfield/player/'>American Experience: Murder of a President</a> <br/>"  +
+                  "<a href='http://pbslearningmedia.org/resource/b98d7dbb-a7bf-468c-aefa-9c0314d908b5/james-a-garfield-60-second-presidents/'>60-Second Presidents</a> <br/>"
             );
 
-            L.marker([38.894433, -84.232621], {icon: bluePin}).addTo(mymap)
-                .bindPopup(
- "<img src='images/grant1.jpg' width='150px'><br/>" +
-"<h2>Ulysses S. Grant Birthplace</h2>" +
-"<p> Ulysses S. Grant, eighteenth president of the United States, was not born in a log cabin.  However, his birth on April 27, 1822 in a quiet" +
-" and unpretentious Ohio River hamlet and early childhood in nearby Georgetown, Ohio, established in him a kinship " +
-"and identification with the people he would one day serve as President. The small frame cottage in Point Pleasant was the birthplace " +
-"of the first child of tanner Jesse Grant and his wife, Hannah. The cottage was the home of the Grant family for less" +
-"than a year before Jesse, having saved the money he earned as a tanner, built a tannery of his own in the Brown county seat, Georgetown.</p>" +
-"<a href='http://www.usgrantbirthplace.org/' target='_blank'>Official Webpage</a>"                );
+        L.marker([38.894433, -84.232621], {
+                icon: bluePin
+            }).addTo(mymap)
+            .bindPopup(
+                "<img src='images/grant1.jpg' width='150px'><br/>" +
+                "<h2>Ulysses S. Grant Birthplace</h2>" +
+                "<p> Ulysses S. Grant, eighteenth president of the United States, was not born in a log cabin.  However, his birth on April 27, 1822 in a quiet" +
+                " and unpretentious Ohio River hamlet and early childhood in nearby Georgetown, Ohio, established in him a kinship " +
+                "and identification with the people he would one day serve as President. The small frame cottage in Point Pleasant was the birthplace " +
+                "of the first child of tanner Jesse Grant and his wife, Hannah. The cottage was the home of the Grant family for less" +
+                "than a year before Jesse, having saved the money he earned as a tanner, built a tannery of his own in the Brown county seat, Georgetown.</p>" +
+                "<a href='http://www.usgrantbirthplace.org/' target='_blank'>Official Webpage</a>");
 
 
 
