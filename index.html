@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="leaflet.css" />
     <link rel="stylesheet" href="styles.css" />
     <script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+    <script src="https://use.fontawesome.com/8c3a144451.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
@@ -53,8 +54,10 @@
                 icon: bluePin
             }).addTo(mymap)
             .bindPopup(
-                "<img src='images/garfield1.jpg' width='150px'><br/><h1>James Garfield<span class='subheading'>- 20<sup>th</sup> President</span></h1>" +
-                "<h2>James A. Garfield National Historic Site</h2>" +
+                "<i class='fa fa-institution fa-2x' aria-hidden='true'></i>" +
+                "<img src='images/garfield1.jpg' width='150px' alt='James Garfield' class='img-rounded-right'><br/><h1>James Garfield<br>" +
+                "<span class='subheading'>20<sup>th</sup> President</span></h1><br/>" +
+                "<hr class='style18'/><h2>James A. Garfield National Historic Site</h2>" +
                 "<p>A front porch can serve many purposes. For some, a place to enjoy the breeze on a warm summer night. For others, a perch from which to keep eyes on what's " +
                 "happening in their neighborhood. In 1880, James Garfield used his front porch as a platform to greet thousands of well-wishers during his presidential campaign." +
                 " Today, the porch serves as a gateway to the story of the Garfield family.</p>" +
@@ -68,9 +71,11 @@
                 icon: bluePin
             }).addTo(mymap)
             .bindPopup(
-                "<img src='images/grant1.jpg' width='150px'><br/>" +
-                "<h2>Ulysses S. Grant Birthplace</h2>" +
-                "<p> Ulysses S. Grant, eighteenth president of the United States, was not born in a log cabin.  However, his birth on April 27, 1822 in a quiet" +
+              "<i class='fa fa-institution fa-2x' aria-hidden='true'></i>" +
+                "<img src='images/grant1.jpg' width='150px' alt='Ulysses S. Grant' class='img-rounded-right'><br/><h1>Ulysses S. Grant<br>" +
+                "<span class='subheading'>18<sup>th</sup> President</span></h1><br/>" +
+                "<hr class='style18'/><h2>Ulysses S. Grant Birthplace</h2>" +
+                "<p>Ulysses S. Grant, eighteenth president of the United States, was not born in a log cabin.  However, his birth on April 27, 1822 in a quiet" +
                 " and unpretentious Ohio River hamlet and early childhood in nearby Georgetown, Ohio, established in him a kinship " +
                 "and identification with the people he would one day serve as President. The small frame cottage in Point Pleasant was the birthplace " +
                 "of the first child of tanner Jesse Grant and his wife, Hannah. The cottage was the home of the Grant family for less" +

@@ -1,17 +1,61 @@
 body {
-
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }
 
-#mapid { height: 900px; }
+#mapid {
+    height: 900px;
+}
 
 h1 {
-color:#092D44;
-
+    color: #092D44;
 }
 
 .subheading {
-  color:#092D44;
-  font-size: .75em;
+    color: #092D44;
+    font-size: .75em;
+}
+
+h2 {
+  color:#B32D34;
+}
+p {
+  font-size:14px;
+  letter-spacing:.5px;
+  line-height:1.6;
+}
+
+a:link, a:active, a:visited, a:hover {
+    color: #114F63;
+    font-size: 14px;
+}
+
+hr.style18 {
+  height: 30px;
+  border-style: solid;
+  border-color: #8c8b8b;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+  margin-top:35px;
+}
+hr.style18:before {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: #8c8b8b;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+
+.img-rounded-right {
+    border-radius: 6px;
+    float: right;
+}
+
+.img-rounded-left {
+    border-radius: 6px;
+    float: left;
+    margin-right: 3px;
 }
