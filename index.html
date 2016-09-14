@@ -3,7 +3,8 @@
 <head>
     <link rel="stylesheet" href="leaflet.css" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+  <!--  <script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>-->
+    <script src="leaflet-src.js"></script>
     <script src="https://use.fontawesome.com/8c3a144451.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
@@ -57,7 +58,7 @@
                 "<i class='fa fa-institution fa-2x' aria-hidden='true'></i>" +
                 "<img src='images/garfield1.jpg' width='150px' alt='James Garfield' class='img-rounded-right'><br/><h1>James Garfield<br>" +
                 "<span class='subheading'>20<sup>th</sup> President</span></h1><br/>" +
-                "<hr class='style18'/><h2>James A. Garfield National Historic Site</h2>" +
+                "<div class='hrdiv'><hr class='style18'/></div><h2>James A. Garfield National Historic Site</h2>" +
                 "<p>A front porch can serve many purposes. For some, a place to enjoy the breeze on a warm summer night. For others, a perch from which to keep eyes on what's " +
                 "happening in their neighborhood. In 1880, James Garfield used his front porch as a platform to greet thousands of well-wishers during his presidential campaign." +
                 " Today, the porch serves as a gateway to the story of the Garfield family.</p>" +
@@ -74,7 +75,7 @@
               "<i class='fa fa-institution fa-2x' aria-hidden='true'></i>" +
                 "<img src='images/grant1.jpg' width='150px' alt='Ulysses S. Grant' class='img-rounded-right'><br/><h1>Ulysses S. Grant<br>" +
                 "<span class='subheading'>18<sup>th</sup> President</span></h1><br/>" +
-                "<hr class='style18'/><h2>Ulysses S. Grant Birthplace</h2>" +
+                "<div class='hrdiv'><hr class='style18'/></div><h2>Ulysses S. Grant Birthplace</h2>" +
                 "<p>Ulysses S. Grant, eighteenth president of the United States, was not born in a log cabin.  However, his birth on April 27, 1822 in a quiet" +
                 " and unpretentious Ohio River hamlet and early childhood in nearby Georgetown, Ohio, established in him a kinship " +
                 "and identification with the people he would one day serve as President. The small frame cottage in Point Pleasant was the birthplace " +
@@ -91,8 +92,10 @@
                 icon: bluePin
             }).addTo(mymap)
             .bindPopup(
-                "<img src='images/grant1.jpg' width='150px'><br/>" +
-                "<h2>Ulysses S. Grant Boyhood Home &amp; Schoolhouse</h2>" +
+                "<i class='fa fa-institution fa-2x' aria-hidden='true'></i>" +
+                "<img src='images/grant1.jpg' width='150px' alt='Ulysses S. Grant' class='img-rounded-right'><br/><h1>Ulysses S. Grant<br>" +
+                "<span class='subheading'>18<sup>th</sup> President</span></h1><br/>" +
+                "<div class='hrdiv'><hr class='style18'/></div><h2>Ulysses S. Grant Boyhood Home &amp; Schoolhouse</h2>" +
                 "<p>The boyhood home of Ulysses S. Grant was built in 1823, with additions to the home made in 1825 and 1828, and many more times after it was sold in 1840's. " +
                 " Designated a National Historic Landmark, it was opened for visitors in 1982. Nearby, the two-room school attended by Ulysses Grant" +
                 " was built in 1829 and served as Georgetown's only schoolhouse for over twenty years until it was replaced in 1852. </p>" +
@@ -103,12 +106,14 @@
 
             );
 
-        L.marker([40.586518, -83.121622], {
+        L.marker([40.586518, -83.131622], {
                 icon: bluePin
             }).addTo(mymap)
             .bindPopup(
-                "<img src='images/harding1.jpg' width='150px'><br/>" +
-                "<h2>Warren G. Harding Home</h2>" +
+                "<i class='fa fa-institution fa-2x' aria-hidden='true'></i>" +
+                "<img src='images/harding1.jpg' width='150px' alt='Warren G. Harding' class='img-rounded-left'><br/><h1>Warren G. Harding<br>" +
+                "<span class='subheading'>29<sup>th</sup> President</span></h1><br/>" +
+                "<div class='hrdiv'><hr class='style18'/></div><h2>Warren G. Harding Home</h2>" +
                 "<p>The Harding Collections located in Marion, OH encompass more than 5,000 original items, including 300" +
                 " from the White House. Because most of what you'll see in the home is original, you'll get the feeling that" +
                 " Warren G. and Florence Harding have just stepped into the next room. </p>" +
@@ -122,8 +127,10 @@
                 icon: bluePin
             }).addTo(mymap)
             .bindPopup(
-                "<img src='images/hayes1.jpg' width='150px'><br/>" +
-                "<h2>Rutherford B. Hayes Presidential Center</h2>" +
+                "<i class='fa fa-institution fa-2x' aria-hidden='true'></i>" +
+                "<img src='images/hayes1.jpg' width='150px' alt='Rutherford B. Hayes' class='img-rounded-left'><br/><h1>Rutherford B. Hayes<br>" +
+                "<span class='subheading'>19<sup>th</sup> President</span></h1><br/>" +
+                "<div class='hrdiv'><hr class='style18'/></div><h2>Rutherford B. Hayes Presidential Center</h2>" +
                 "<p>The Hayes Presidential Center includes the home, library, museum, tomb, and 25-acre estate (called Spiegel Grove) " +
                 "of 19th U.S. President Rutherford B. Hayes. Entrance to the property is through one of six sets of original White House gates.</p>" +
                 "<a href='http://www.rbhayes.org/' target='_blank'>Official Webpage</a><br/>" +
@@ -136,8 +143,10 @@
                 icon: bluePin
             }).addTo(mymap)
             .bindPopup(
-                "<img src='images/mckinley1.jpg' width='150px'><br/>" +
-                "<h2>William McKinley Birthplace Museum</h2>" +
+                "<i class='fa fa-institution fa-2x' aria-hidden='true'></i>" +
+                "<img src='images/mckinley1.jpg' width='150px' alt='William McKinley' class='img-rounded-left'><br/><h1>William McKinley<br>" +
+                "<span class='subheading'>25<sup>th</sup> President</span></h1><br/>" +
+                "<div class='hrdiv'><hr class='style18'/></div><h2>William McKinley Birthplace Museum</h2>" +
                 "<p>The museum's collections feature memorabilia from the Civil and Spanish American wars, objects from McKinley's campaigns" +
                 " and presidencies and from the building of the memorial. Other objects on display include mannequins of  President and " +
                 "Mrs. McKinley in a sleigh, a spinning wheel owned by the McKinley family, a piano owned by the President's mother, and a law desk belonging to the late president. </p>" +
@@ -151,8 +160,10 @@
                 icon: bluePin
             }).addTo(mymap)
             .bindPopup(
-                "<img src='images/mckinley1.jpg' width='150px'><br/>" +
-                "<h2>William McKinley Presidential Library &amp; Museum</h2>" +
+              "<i class='fa fa-institution fa-2x' aria-hidden='true'></i>" +
+              "<img src='images/mckinley1.jpg' width='150px' alt='William McKinley' class='img-rounded-right'><br/><h1>William McKinley<br>" +
+              "<span class='subheading'>25<sup>th</sup> President</span></h1><br/>" +
+              "<div class='hrdiv'><hr class='style18'/></div><h2>William McKinley Presidential Library &amp; Museum</h2>" +
                 "<p>The museum includes an interactive, hands-on science center," +
                 " a presidential museum dedicated to our 25th president, a historical library, planetarium and more. The location also " +
                 "includes the tomb of the late President, the McKinley National Memorial.</p>" +
@@ -166,8 +177,10 @@
                 icon: bluePin
             }).addTo(mymap)
             .bindPopup(
-                "<img src='images/taft1.jpg' width='150px'><br/>" +
-                "<h2>William Howard Taft National Historic Site</h2>" +
+              "<i class='fa fa-institution fa-2x' aria-hidden='true'></i>" +
+                "<img src='images/taft1.jpg' width='150px' alt='William Howard Taft' class='img-rounded-right'><br/><h1>William Howard Taft<br>" +
+                "<span class='subheading'>27<sup>th</sup> President</span></h1><br/>" +
+                "<div class='hrdiv'><hr class='style18'/></div><h2>William Howard Taft National Historic Site</h2>" +
                 "<p>High atop one of Cincinnati's most prominent hilltops stands the two-story Greek Revival house where William Howard Taft " +
                 "was born and grew up. Hard work, a good education, and an interest in civic duty are attributes that made the Taft family " +
                 "outstanding leaders over the years. The environment that shaped Taft's character and philosophy  is highlighted  on a visit to the site.</p>" +
@@ -181,8 +194,9 @@
                 icon: bluePin
             }).addTo(mymap)
             .bindPopup(
-                "<img src='images/firstladies.gif' width='150px'><br/>" +
-                "<h2>National First Ladies' Library</h2>" +
+                "<i class='fa fa-institution fa-2x' aria-hidden='true'></i>" +
+                "<img src='images/firstladies.gif' width='150px' class='img-rounded-right' alt='National First Ladies' Library'><br/>" +
+                "<h2>National First Ladies' Library</h2><div class='hrdiv'><hr class='style18'/></div>" +
                 "<p>As the first and only facility of its kind, the National First Ladies' Library serves as a unique national resource for patrons " +
                 "from school children to serious scholars.  As a national archive devoted to educating people about the contributions of First Ladies " +
                 "and other notable women in history, the Library's holdings fill an informational void that has long frustrated academicians and armchair " +
@@ -195,8 +209,10 @@
                 icon: redPin
             }).addTo(mymap)
             .bindPopup(
-                "<img src='images/garfield1.jpg' width='150px'><br/><h1>James Garfield</h1><h3>20<sup>th</sup> President</h3>" +
-                "<h2>James A. Garfield Tomb</h2>" +
+              "<i class='fa fa-bookmark fa-2x' aria-hidden='true'></i>" +
+              "<img src='images/garfield1.jpg' width='150px' alt='James Garfield' class='img-rounded-right'><br/><h1>James Garfield<br>" +
+              "<span class='subheading'>20<sup>th</sup> President</span></h1><br/>" +
+              "<div class='hrdiv'><hr class='style18'/></div><h2>James A. Garfield Tomb</h2>" +
                 "<p>Designed by architect George Keller, the Garfield Monument was dedicated on Memorial Day, 1890. The Garfield Monument stands 180 feet tall  " +
                 "and is constructed of Berea Sandstone. Around the exterior of the balcony are five, terra cotta panels by Casper Bubel, with over " +
                 "110 figures all life size, depicting Garfield's life and death. The panels include Garfield as a teacher, as Major General in the Civil War, " +
