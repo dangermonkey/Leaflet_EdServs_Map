@@ -7,6 +7,7 @@
 var oldL = window.L,
     L = {};
 
+
 L.version = '0.7.7';
 
 // define Leaflet for Node module pattern loaders, including Browserify
@@ -3815,8 +3816,8 @@ L.Popup = L.Class.extend({
 
 	options: {
 		minWidth: 50,
-		maxWidth: 300,
-		// maxHeight: null,
+		maxWidth: 400,
+	  maxHeight: 300,
 		autoPan: true,
 		closeButton: true,
 		offset: [0, 7],
