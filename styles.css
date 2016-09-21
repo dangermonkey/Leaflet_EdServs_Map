@@ -6,7 +6,19 @@ body {
 #mapid {
     height: 600px;
 }
+.legend {
+  width:250px;
+  border-radius: 6px;
+  padding:5px;
+    font-family: 'Roboto', sans-serif;
+  background-color: #6D8383;
+}
 
+.legend h2 {
+text-align: center;
+color:#fff;
+
+}
 h1 {
     color: #092D44;
 }
