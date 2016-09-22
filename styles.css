@@ -7,17 +7,21 @@ body {
     height: 600px;
 }
 .legend {
-  width:250px;
+  width:160px;
   border-radius: 6px;
   padding:5px;
     font-family: 'Roboto', sans-serif;
-  background-color: #6D8383;
+  background-color: #BCB8A7;
 }
 
 .legend h2 {
 text-align: center;
-color:#fff;
+color:#000;
+letter-spacing: 1px;
+}
 
+.legend p {
+  font-size:11px;
 }
 h1 {
     color: #092D44;

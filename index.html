@@ -24,14 +24,14 @@
 
         var MyControl = L.Control.extend({
             options: {
-                position: 'topright'
+                position: 'bottomright'
             },
 
             onAdd: function(mymap) {
                 // create the control container with a particular class name
                 var container = L.DomUtil.create('div', 'legend');
                 container.innerHTML = "<h2>Legend</h2>" +
-                                      "<p><img src='images/blue_pin.png' width='30px;'> Home/Museum/Library/Archive </p>" +
+                                      "<p><img src='images/blue_pin.png' width='30px;'> Home/Museum/Library </p>" +
                                       "<p><img src='images/red_pin.png' width='30px;'> Gravesite </p>" +
                                       "<p><img src='images/white_pin.png' width='30px;'> Points of Interest </p>" ;
 
